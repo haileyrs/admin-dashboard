@@ -1,0 +1,71 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 175px 1fr;
+}
+
+.sidebar {
+  background-color: #3730a3;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 2fr 20px 2fr 2fr;
+}
+
+.sidebar-logo {
+  padding-top: 20px;
+} 
+
+.sidebar-bottom {
+  grid-row-start: 4;
+} 
+
+.sidebar-item, .sidebar-item-logo {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 100%;
+  gap: 10px;
+  height: 40px;
+}
+
+.sidebar .sidebar-item h4, .sidebar .sidebar-item-logo h3 {
+  color: white;
+}
+
+.sidebar-item-logo svg {
+  height: 50px;
+  padding: 10px;
+}
+
+.sidebar-item svg {
+  height: 25px;
+  padding: 20px;
+}
+
+.header {
+  background-color: #eef2ff;
+  grid-column: 2 / 4;
+}
+
+
+
+.main-content {
+  background-color: #e0e7ff;
+}
+
+.card {
+  border-color: #86efac;
+}
